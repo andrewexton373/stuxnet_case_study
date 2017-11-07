@@ -1,0 +1,358 @@
+% Term paper proposal - Andrew Exton
+% CSC 300: Professional Responsibilities
+% Dr. Clark Turner
+
+% One Column Format
+\documentclass[12pt]{article}
+
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{footmisc}
+\usepackage{titlesec}
+\usepackage{framed}
+\usepackage{csquotes}
+\usepackage{soul}
+
+
+%%% INDENTATION DEPTH
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+%%% PARAGRAPH TITLE FORMAT
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+%%% SUBPARAGRAPH TITLE FORMAT
+\titleformat{\subparagraph}
+{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\subparagraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{letterpaper}
+
+
+\begin{document}
+
+\title{\vfill Stalling Iranian Uranium Enrichment: a Stuxnet Case Study } %\vfill gives us the black space at the top of the page
+\author{
+By Andrew Exton \vspace{10pt} \\
+CPE 300: Professional Responsibilities  \vspace{10pt} \\
+Dr. Clark Turner \vspace{10pt} \\
+}
+\date{\today} %Or use \today for today's Date
+
+\maketitle
+
+\vfill  %in combination with \newpage this forces the abstract to the bottom of the page
+\begin{abstract}
+Throughout the early 2000s, Iran's policy on nuclear development, in addition to international intelligence gathering indicated Iran sought the advancement of its nuclear weapons program, grounding concern and sparking debate in forums such as the United Nations.\cite{unitedNationsResolutions}
+Was it ethical for the United States and Israeal to intervene, controlling Iran's uranium production efficiency by deploying the Stuxnet virus, destroying critical nuclear infrastructure?
+
+This deliberate action restricted Iran's ability to pursue nuclear energy for civilian infrastructure including: water desalination and energy production. However, it also limited Iran's ability to achieve nuclear "break-out": a state where  intelligence agencies are not confident they can determine the status of nuclear weapons production due to rapid uranium enrichment capabilities. The deployment of the Stuxnet virus violated Iran's sovereignty, was not sanctioned by United Nations agreements, and violates multiple tenents of the Software Engineering Code of Ethics, resulting in its unethical nature.
+
+%%% MAIN CODE TENET + PLAIN LANGUAGE REASON !!!!!
+
+\end{abstract}
+
+\thispagestyle{empty} %remove page number from title page, but still keep it as pg #1
+\newpage
+
+\tableofcontents
+\newpage
+
+\begin{multicols}{2}
+
+%%%%%%%%%%%%%%%%%%%%
+%%% Known Facts  %%%
+%%%%%%%%%%%%%%%%%%%%
+\section{Facts}
+
+Throughout the early 2000s, Iran's policy on nuclear development, in addition to international intelligence gathering indicated Iran sought the advancement of its nuclear weapons program, grounding concern and sparking debate in forums such as the United Nations.\cite{unitedNationsResolutions}
+
+The United Nations imposed international mandates on the Islamic Republic of Iran, requiring the disclosure of their nuclear program activity, following international nuclear weapon proliferation concerns. After reviewing Iran's October 21st, 2003 nuclear program declaration, the International Atomic Energy Association (IAEA) questioned why certain centrifuge designs uncovered during the inspection were not included in the report, which Iranian authorities responded they, "neglected to include due to time considerations".\cite{implementationOfNPTSafeguards} In response to uncooperative government action by Iran, On July 31, 2006, the United Nations Security Council (UNSC) adopted Resolution 1696, which called for the suspension of Iran's uranium enrichment and reprocessing related activities, until IAEA officials could assess the nature of Iran's enrichment activity.\cite{resolution1696}
+
+From the data gathered through IAEA inspections, the Institute for Science and International Security reported on December 2nd, 2008 that Iran was capable of accumulating the threshold amount of fissile material needed in a nuclear warhead from their Low Enriched Uranium (LEU) stockpiles, and postulated their ability to do so before 2010.\cite{hasIranAchievedaNuclearWeapon}
+
+In June 2010, a Belarusian malware-detection firm detected multiple versions of malware on client computers digitally signed by two different certificates, one from Realtek Semiconductor, and the other from JMicron Technology, both of which were revoked the subsequent month.\cite{theRealStoryOfStuxnet} This unprecedented virus's construction employed legitimate keyfile signatures, infecting private organization IP addresses concentrated in Iran.\cite{w32.stuxnetDossier} Security analysts extensively analyzed the viruses construction, to determine its intent, and once identified, Microsoft coined the name Stuxnet to expose its threat to vulnerable Windows computer systems.\cite{microsoftCoinsStuxnet}
+
+On November 3rd, 2010, the head of Iran's Atomic Energy Association reported nuclear enrichment capability losses after malware caused their facilities to suffer critical malfunctions the prior year.\cite{didStuxnetTakeOut1000Centrifuges} 
+
+Stuxnet's code was found to target a unique hardware configuration for a particular supervisory control and data acquisition system (SCADA), which monitors various programmable logic controllers. Before the viruses target or intent were uncovered, Stuxnet was able to breach Iran's Nantez uranium enrichment facility. The payload modified the frequencies at which model specific enrichment centrifuge motors spun, in addition to manipulating the on-site systems monitoring results with unaltered system records, resulting in hardware meltdowns of critical nuclear infrastructure.\cite{w32.stuxnetDossier}\cite{lessonsFromStuxnet}
+
+On November 29, 2010, President Mahmoud Ahmadinejad told reporters, "[Stuxnet] succeeded in creating problems for a limited number of our centrifuges... They did a bad thing," correlating with IAEA Reports of the replacement of 984 centrifuges the prior year at the Nantez enrichment facility, in addition to prior reports of Iranian nuclear engineers losing their positions.\cite{didStuxnetTakeOut1000Centrifuges}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Research Question %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research question}
+
+Was it ethical for the United States and Israel to destroy a portion of Iran's critical nuclear infrastructure, utilizing the Stuxnet virus to slow nuclear weapon proliferation, considering innate sovereignty violations?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Social Implications %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Social Implications}
+
+\subsection{National Security}
+
+In February 2013, President Obama signified the necessity for the United States to protect its critical infrastructure, issuing PPD-21, directing that federal contracts must, "take proactive steps to manage risk and strengthen the security and resilience of the Nation’s critical infrastructure, considering all hazards that could have a debilitating impact on national security, economic stability, public health and safety, or any combination thereof."\cite{industrialCyberVulnerabilities} 
+
+\subsection{Increasing Number of Attack Vectors}
+
+The number of disclosed security vulnerabilities increased 29.2\% in the first quarter of 2017, indicating the possibility more viruses of Stuxnet nature, developed by countries, or even terrorist organizations targeting critical infrastructure for malicious reasons.\cite{industrialCyberVulnerabilities} Today, the worlds reliance on computer infrastructure opens up a seemingly infinite amount of attack vectors for hackers to discover and use to infiltrate. It will be dependent on the abilities of groups, organizations, and countries to update to the latest security patches and to implement the current best practices of secure software design to combat the future influx of malware. Unfortunately, recent events such as the Equifax leak highlight the incompetence of many regarding software security and the need for society to promote it's importance especially with regard to critical infrastructure.\cite{equifaxHack}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Extant Arguments from External Sources %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Extant arguments}
+
+\subsection{Arguments affirmative}
+
+\subsubsection{Stuxnet targeted Iranian critical nuclear infrastructure, resulting in physic destruction}
+
+From evidence gathered, the Stuxnet virus was responsible for the necessary replacement of an estimated 984 of the roughly 9000 total centrifuges at the Nantez nuclear enrichment facility, resulting in the disruption Iran's Low Level Enrichment (LUE)\footnotemark[1] capabilities.\cite{lookIntoIranianNuclearProgram} This action disregarded international sovereignty laws, disrupting Iranian critical nuclear enrichment production, recorded for use in civilian nuclear energy reactors.\cite{internationalSovereigntyDefinition}\footnotemark[2] Its effects also disrupted critical nuclear infrastructure research projects, impeding the development of nuclear desalination plant agreements with Russia, thus restricting the development of a potential source of fresh water for civilians in Iran.\cite{iranRussiaNuclearCooperation}
+
+\footnotetext[1]{Low Level Uranium (LUE) enrichment generates the fuel consumed in a civilian nuclear reactor, a process where naturally found uranium is refined to comprise between 7-20\% Uranium-235 as fissile material.\cite{uraniumEnrichmentDetails}}
+
+\footnotetext[2]{International sovereignty is well protected by the United Nation's charter and is further defined by the General Assembly in A/RES/50/172 to include: "the strict observance by States of the obligation not to intervene in the affairs of any other State is an essential condition to ensure that nations live together in peace with one another, since the practice of any form of intervention not only \underline{violates the spirit and letter of the Charter}, but also leads to the \underline{creation of situations which threaten international peace and security}\cite{internationalSovereigntyDefinition}}
+
+\subsubsection{Stuxnet infected over 50,000 unique organizations' IP addresses during its attack}
+
+Using illegally procured certificate key-files, Stuxnet obscured itself as licensed software from two major companies Realtek Semiconductor and JMicron Technology. With these signatures, experts estimate the virus infected over 50,000 unique organizations' IP addresses.\cite{lessonsFromStuxnet} Records indicate a concentration of infected IP addresses in Iran, calling to question the ethics of victimizing private corporations, in addition to  utilizing them as channels of disrupting their respective nation's own critical infrastructure. Stuxnet infiltrated the computer systems of private individuals and organizations in Iran to construct a source of an attack vector, ultimately successful, subsequently breaching Iran's Nantez nuclear enrichment facility.\cite{w32.stuxnetDossier} 
+
+\subsubsection{Stuxnet was not officially sanctioned by UNSC resolutions}
+
+UNSC Resolution 1747 emphasizes, "the importance of political and diplomatic efforts to find a negotiated solution guaranteeing that Iran’s nuclear programme is exclusively for peaceful purposes ... noting that such a solution would benefit nuclear non-proliferation ... welcoming the [continued] commitment of ... the United States, with the support of the European Union’s High Representative, to seek a negotiated solution."\cite{resolution1747} The resolution was adopted with these explicit words in order to deter the likelyhood the United States would take action with physical intervention on the Iranian nuclear program. The Untied States violated their signature to this resolution, in addition to multiple others by deploying Stuxnet, as it resulted in the physical destruction of Iran's critical nuclear infrastructure.
+
+\subsection{Arguments negative}
+
+\subsubsection{Iran's nuclear program is being targeted for violating numerous UNSC Resolutions pertaining to uranium enrichment control}
+
+The United States and Israel understood that Iran was nearing a state of nuclear "break-out"\footnotemark[3]. In this case: A state where Iran possesses the capability of enriching enough uranium before IAEA inspections, or international intelligence believes they could confidently intercept enrichment activity. Experts postulate that as a preventative measure to promote nuclear non-proliferation, the United States and Israel jointly agreed to limit the efficiency of Iran's nuclear enrichment through the deployment of Stuxnet, resulting in the increased likelihood IAEA officials would intercept troubling enrichment activity.\cite{theRealStoryOfStuxnet}
+
+\footnotetext[3]{"Break-out" refers to the duration a given regime would need to enrich enough uranium-235 for a singular nuclear warhead.\cite{breakoutDefinition}}
+
+\subsubsection{Military intervention would have resulted in environmental damage, in addition to civilian casualties}
+
+The United States and Israel drafted plans for military bombings of nuclear enrichment facilities, back by Reuter's citing policy statements on January 29, 2009, "the United States [reserves] all its options, ranging from diplomacy to military action, to pressure Iran over its nuclear program".\cite{usOptionsForIran} Even the most precise military intervention on nuclear infrastructure, would likely resulting in the release of radioactive particles into the atmosphere, creating an environmental crisis, subsequently resulting in civilian casualties. The careful design and deployment of the Stuxnet virus circumvented environmental damage and casualties, while protecting the interests of international nuclear non-proliferation.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Analytic principles %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Applicable analytic principles}
+
+\subsection{How the Software Engineering Code of Ethics applies}
+
+The preamble of the Software Engineering Code of Ethics extends its obligations to, "anyone claiming to be or aspiring to be a software engineer."\cite{softwareEngineeringCodeOfEthics}
+
+\subsubsection{Software Engineer}
+
+The SE Code further defines Software Engineers as, "those who contribute by \underline{direct participation} or by teaching, to the analysis, specification, \underline{design}, development, \underline{certification}, maintenance and testing of \underline{software systems}."
+
+\paragraph{Direct Participation}
+
+Combining the Cambridge Dictionary definitions for both Direct and Participation yields, "to take part ... in something without anyone or anything else being involved."\cite{participationDefinition}\cite{directDefinition}
+
+\paragraph{Design}
+Design is the, "planning that exists behind an action."\cite{designDefinition}
+
+\paragraph{Certification}
+Certification is the act of certifying, respectively defined, "to attest as being true or as represented or as meeting a standard."\cite{certifyingDefinition}
+
+\subparagraph{Digital Certificates}
+In software, digital certificates are, "a set of data that completely identifies an entity, and is issued by a certification authority only after that authority has verified the entity's identity."\cite{digitalCertificateDefintion} They're utilized to sign software, which marks the identity of the software's origins allowing operating systems to authorize likely non-malicious executables to run.
+
+\paragraph{Software System}
+
+Software Systems are defined as, "programs ... and associated documentation pertaining to the operation of a computer system."\cite{softwareSystemDefinition} Stuxnet was a program designed to inject itself into other computer networks, therefore in this domain the software system is the virus itself.\cite{w32.stuxnetDossier}
+
+\paragraph{Software Engineer Definition}
+
+Viewed from a lens of domain specific applicability, the above definitions yield - a Software Engineer is one who contributes to the development of Stuxnet independently from outside influence in conjunction with any truthful testament that the respective programs and associated documentation meet official digital certification standards. Furthermore, the definition can be expanded to include Software engineering managers and leaders, for which the SE Code Of Ethics writes, "shall subscribe to and promote an ethical approach to the management of software development."\cite{softwareEngineeringCodeOfEthics}
+
+\subsection{Actor Analysis}
+
+\subsubsection{Contributes by Taking Part}
+
+Refined coordination was necessary to develop the Stuxnet program. Stuxnets' actors, covert state-sponsored programs of both the United States and Israel: housed within the National Security Agency and Unit 8200 respectively, held Direct Participation in the design and false certification of the virus's 50 kilobyte code base.\cite{nsaAndUnit8200}\cite{w32.stuxnetDossier}
+
+\subsubsection{Without Outside Involvement}
+
+Stuxnet needed to breach the air-gap the Nantez nuclear facility innately exhibits due to its closed access from the internet. This being the case, Stuxnet was designed as a fire-and-forget type weapon, where once it was deployed it's execution could not be externally terminated. The nature of the virus prevents outside involvement or interference by another party outside of its initial developers, until it can be identified and reverse engineered by security analysts.\cite{stuxnetFireandForget}
+
+
+\subsubsection{Analysis}
+Due to the Software Engineering Code of Ethics extension to the management of Software Engineering teams, it naturally extends to any nation-state allocating resources towards a development project - especially when funding is sourced from taxation. The United States and Israel acted to sanction Software Engineering teams in order to develop what ultimately became known as Stuxnet. The SE Code of Ethics describes obligations nation-states are required to adhere to when their objectives require Software Engineering.
+
+\subsubsection{Conclusion}
+
+The Software Engineering Code of Ethics documents an international consensus of the ethics practicing software engineers agree should be universally followed, "to ensure their efforts are used for good."\cite{softwareEngineeringCodeOfEthics} The United States and Israel were directly involved in allocating the resources for the development of Stuxnet. Therefore, both nations, directly acted and are responsible for practicing ethical software development procedures. We will apply the SE Code of Ethics to analyze the ethics of state-sponsors pursuing cyberweapon development, utilizing Stuxnet as our case-study.
+
+\subsection{Code Tenet 2.02}
+
+\subsubsection{Definition}
+
+Tenet 2.02 states:
+\begin{framed}
+Software Engineers shall, "Not knowingly use \underline{software} that is \underline{obtained illegally}..."\cite{softwareEngineeringCodeOfEthics}
+\end{framed}
+
+\paragraph{Software is}
+Google defines software as, "The programs and other operating information used by a computer."\cite{softwareDefinition} The key-certificate files used to falsely sign Stuxnet, are therefore classified under the superset of software due to their necessity for software to operate.
+
+\paragraph{Obtained illegally}
+To obtain something is to come into the possession of the respective item, regardless of the means. Illegal means, "not according to or authorized by law," therefore, an item that is obtained in a way forbidden by laws or statutes was obtained illegally.\cite{illegalDefinition}
+
+\subsubsection{Domain Specific Tenet}
+
+Therefore, SE Code Tenet 2.02 can be stated:
+\begin{framed}
+The United States and Israel should not \ul{knowingly} \ul{use programs} and \ul{other operating information} that have been \ul{obtained in ways forbidden by law}. 
+\end{framed}
+
+\subsubsection{Analysis}
+
+\paragraph{Knowingly use programs}
+
+The United States and Israel both allocated funding for and sanctioned teams of Software Engineers in highly classified military research programs lead by the National Security Agency and Unit 8200.\cite{NSAandUnit8200} These actions confirm state knowledge of the Stuxnet virus, in addition to its purpose, for both actor nations.
+
+\paragraph{Other operating information}
+
+In order for Stuxnet to deliver its payload to the Nantez enrichment facility, it built a network of potential attack vectors by infecting thousands of computers largely centralized in Iran.
+
+The false signing of the Stuxnet virus required the inclusion of digital signing certificates to circumvent Windows system security measures. These certificates constitute additional operating information needed by the virus, and are paired with the executable upon release.
+
+\paragraph{Obtained in ways forbidden by law}
+
+Stuxnet's Software Engineers acquired stolen digital certificates from two Taiwanese corporations, Realtek and JMicron.\cite{signedUsingCertificates} Theft is a chargeable offense in the United States, Israel, in addition to Taiwan, therefore these digital certificates were obtained in ways directly in violation with the law. Due to the nature of the certificates specifically signed and represented the two victim corporations by name, it is certain either the N.S.A. or Unit 8200 acted to direct their Software Engineers to obtain these certificates in ways forbidden by law, in addition to fraudulently certifying malicious software.
+
+\subsubsection{Conclusion}
+
+This action violates existing theft and fraud legislation in both the actor states in conjunction with the victim state, Taiwan, resulting in its unethical nature.
+
+\subsection{Code Tenet 3.13}
+
+\subsubsection{Definition}
+
+Tenet 3.13  states:
+\begin{framed}
+Software Engineers shall, "Be careful to use only \ul{accurate data} derived by \ul{ethical} and \ul{lawful} means, and use it only in ways \ul{properly authorized}."\cite{softwareEngineeringCodeOfEthics}
+\end{framed}
+
+\paragraph{Use accurate data}
+Accurate is defined as, "being in agreement with the truth," while data is defined as, "facts and statistics collected together for reference or analysis."\cite{accurateDefinition}\cite{dataDefinition}
+
+\paragraph{Derived ethically}
+Ethical is defined as, "conforming to accepted standards of conduct."\cite{ethicalDefinition} The Software Engineering Code of Ethics is an internationally accepted standard of conduct all Software Engineers should adopt.
+
+\paragraph{Derived lawfully}
+Lawful means, "being in harmony with the law," therefore, an action that is performed lawfully, adheres to the all laws and statutes adopted by the accepted governing legislation.\cite{lawfulDefinition}
+
+\paragraph{Only use data when properly authorized}
+An action is properly authorized when it is performed after official approval, where the respective official has been designated to coordinate actions performed by its governing parties.
+
+\subsubsection{Domain Specific Tenet}
+
+Therefore, SE Code Tenet 3.13 can be written:
+\begin{framed}
+Software engineers should be careful to \ul{only use statistics collected for reference that are in agreement with the truth}, \ul{derived by actions conforming to accepted standards of conduct}, and \ul{adhering to all laws and statutes governing}, in addition to \ul{using this information only when properly authorized by sanctioned officials}.
+\end{framed}
+
+\subsubsection{Analysis}
+
+\paragraph{Only use statistics collect that are in agreement with the truth}
+
+After successfully breaching the Nantez enrichment facility, the Stuxnet virus collected data from properly operating centrifuges, therefore its data collection was in agreement with the truth.
+
+\paragraph{Derived by actions conforming to accepted standards of conduct}
+
+Stuxnet recorded the normal operating conditions and metrics reported silently, before deploying its true payload. These metrics, while technically stolen, as they were recorded without authorization, never reached public networks, and thus marginally unethically does not constitute the majority of damage.
+
+\paragraph{Adhering to all laws and statutes governing}
+
+The means by which the virus breached the Nantez nuclear enrichment facility to perform data collection can be interpreted as espionage, therefore violating written law.
+
+\subparagraph{Espionage}
+
+The United States legal code defines espionage as,
+
+\begin{displayquote}
+"Gathering or delivering defense information," for the purpose of, "injury of the [victim nation] or to the advantage of a [another] nation,... \ul{transmits}... to any foreign government, or to any \ul{faction or party}... within a foreign country, whether recognized or unrecognized by the United States, or to any... \ul{employee, subject, or citizen thereof}, \ul{either directly or indirectly}, any \ul{document}, ... note, \ul{instrument}... shall be punished by death or by imprisonment for any term of years or for life."\cite{USEspionageLegalDefinition}
+\end{displayquote}
+
+This legislation highlights how the Stuxnet virus could be charged as an act of espionage by United States definition as it gathered critical information for the purpose of injury to Iran's nuclear infrastructure, which is innately interconnected with national defense following the nuclear weapons era. Stuxnet was transmitted with the purpose of injury to Iran's nuclear infrastructure. The virus infected thousands of IP addresses owned by private corporation in Iran. The virus (document) was then, unknowingly (indirectly), physically transfered by at least one employee, subject, or citizen involved with the Nantez enrichment facility. The result was a modification of the instrument readouts of the enrichment centrifuges on-site.
+
+\paragraph{Using this information only when properly authorized by sanctioned officials}
+
+Bypassing authorization, on deployment of the viruses payload, previously recorded unaltered accurate data was used to overwrite and conceal the catastrophic malfunctions resulting from centrifuge operating frequency changes.
+
+\subsubsection{Conclusion}
+
+The Stuxnet virus collected data from properly operating centrifuges at the Nantez nuclear enrichment facility in Iran.  The United States and Israel acted unethically in both the collection of data and malicious use of respective data to conceal system problems, resulting in catastrophic malfunction. The data collection techniques employed by Stuxnet may be interpreted by United States law to constitute espionage.
+
+\subsection{Code Tenet 1.01}
+
+\subsubsection{Definition}
+
+Tenet 1.01 states:
+\begin{framed}
+Software Engineers shall, "\underline{Accept full responsibility} for their \underline{own work}."\cite{softwareEngineeringCodeOfEthics}
+\end{framed}
+
+\paragraph{Accept full responsibility}
+One accepts full responsibility when they identifies all the, "moral, legal, and mental" repercussions resultant from performing an action, while recognizing such consequences as true.\cite{acceptDefinition}\cite{responsibilityDefinition}
+
+\paragraph{For own work}
+Work is defined as an, "activity in which one exerts strength or faculties to do or perform something."\cite{workDefinition}
+
+\subsubsection{Domain Specific Code Tenet}
+
+Therefore, the SE Code Tenet 1.01 can be interpreted:
+\begin{framed}
+The United States and Israel should \ul{identify all the moral, legal, and mental repercussions} \ul{resultant from their work}, and \ul{recognize their consequences as the truth}.
+\end{framed}
+
+\subsubsection{Analysis}
+
+\paragraph{Identify all Moral, Legal, and Mental Repercussions}
+
+Violating the sovereignty for one nation to govern itself results in correlative repercussions.
+
+\paragraph{Resultant from their work}
+
+\paragraph{Recognize the resulting consequences as the truth}
+
+\subsubsection{Conclusion}
+
+Neither the United States, nor Israel have officially publicly announced their involvement in the development of Stuxnet, likely for the purposes of military concealment. Such action restricts the internationally community from reviewing and acting on illegal acts of international espionage and warfare, resulting precedent setting minimal repercussions for the what has been recognized to be the first use of state-sanctioned cyberwarfare. By never publically admitting involvement in the development of Stuxnet, both the United States and Israel acted unethically.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Conclusion %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+
+In conclusion, both the United States and Israel acted unethically when they participated in the development and deployment of the Stuxnet virus. Their actions violated international sovereignty law, restricting Iran's ability to develop its nuclear program independently from international intervention. Iran's strict adherence to the IAEA's inspection regime at the time of Stuxnet's initial deployment further calls to question the legitimacy of the United State's and Israel's ardent stance of deterring Iran from developing nuclear infrastructure all-together. At a low-level, Stuxnet operated by forging critical nuclear infrastructure monitoring equipment data readouts, interfering with the operations of on-site workers, resulting in civilians losing their jobs. It's intended operation was successful in destroying 984 enrichment centrifuges at the Nantez facility, hindering Iran's enrichment potential, however it's immediate effects were only temporary, while it's precedent could be acted endlessly into the future.
+ 
+
+\end{multicols}
+
+%cite all the references from the bibtex you haven't explicitly cited
+\nocite{*}
+
+\bibliographystyle{IEEEannot}
+
+\newpage
+\bibliography{bibliography}
+\end{document}
