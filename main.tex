@@ -154,7 +154,7 @@ The United States and Israel drafted plans for military bombings of nuclear enri
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Analysis %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Analysis }
+\section{Analysis}
 
 \subsection{How the Software Engineering Code of Ethics applies}
 
@@ -208,47 +208,6 @@ Due to the Software Engineering Code of Ethics extension to the management and l
 
 The Software Engineering Code of Ethics documents an international consensus of the ethics practicing software engineers agree should be universally followed, "to ensure their efforts are used for good."\cite{softwareEngineeringCodeOfEthics} The United States and Israeli governments acted as leadership, to allocate resources for the development of Stuxnet. Therefore, both nations, contributed by taking part in the development of Stuxnet. Furthermore, their actions were performed without outside involvement as they act as sovereign nations. Therefore, both the United States and Israel are responsible for practicing ethical software development procedures when developing state sponsored software, such as Stuxnet. We will apply the SE Code of Ethics to analyze the ethics of state-sponsors pursuing cyberweapon development, utilizing Stuxnet as our case-study.
 
-\subsection{Code Tenet 2.02}
-
-\subsubsection{Definition}
-
-Tenet 2.02 states:
-\begin{framed}
-Software Engineers shall, "Not knowingly use \underline{software} that is \underline{obtained illegally}..."\cite{softwareEngineeringCodeOfEthics}
-\end{framed}
-
-\paragraph{Software is}
-Google defines software as, "The programs and other operating information used by a computer."\cite{softwareDefinition} The key-certificate files used to falsely sign Stuxnet, are therefore classified under the superset of software due to their necessity for software to operate.
-
-\paragraph{Obtained illegally}
-To obtain something is to come into the possession of the respective item, regardless of the means. Illegal means, "not according to or authorized by law," therefore, an item that is obtained in a way forbidden by laws or statutes was obtained illegally.\cite{illegalDefinition}
-
-\subsubsection{Domain Specific Tenet}
-
-Therefore, SE Code Tenet 2.02 can be stated:
-\begin{framed}
-The United States and Israel should not \ul{knowingly} \ul{use programs} and \ul{other operating information} that have been \ul{obtained in ways forbidden by law}. 
-\end{framed}
-
-\subsubsection{Analysis}
-
-\paragraph{Knowingly use programs}
-
-The United States and Israel both allocated funding for and sanctioned teams of Software Engineers in highly classified military research programs lead by the National Security Agency and Unit 8200.\cite{NSAandUnit8200} These actions confirm state knowledge of the Stuxnet virus, in addition to its purpose, for both actor nations.
-
-\paragraph{Other operating information}
-
-In order for Stuxnet to deliver its payload to the Nantez enrichment facility, it built a network of potential attack vectors by infecting thousands of computers largely centralized in Iran.
-
-The false signing of the Stuxnet virus required the inclusion of digital signing certificates to circumvent Windows system security measures. These certificates constitute additional operating information needed by the virus, and are paired with the executable upon release.
-
-\paragraph{Obtained in ways forbidden by law}
-
-Stuxnet's Software Engineers acquired stolen digital certificates from two Taiwanese corporations, Realtek and JMicron.\cite{signedUsingCertificates} Theft is a chargeable offense in the United States, Israel, in addition to Taiwan, therefore these digital certificates were obtained in ways directly in violation with the law. Due to the nature of the certificates specifically signed and represented the two victim corporations by name, it is certain either the N.S.A. or Unit 8200 acted to direct their Software Engineers to obtain these certificates in ways forbidden by law, in addition to fraudulently certifying malicious software.
-
-\subsubsection{Conclusion}
-
-This action violates existing theft and fraud legislation in both the actor states in conjunction with the victim state, Taiwan, resulting in its unethical nature.
 
 \subsection{Code Tenet 3.13}
 
@@ -275,14 +234,24 @@ An action is properly authorized when it is performed after official approval, w
 
 Therefore, SE Code Tenet 3.13 can be written:
 \begin{framed}
-Software engineers should be careful to \ul{only use statistics collected for reference that are in agreement with the truth}, \ul{derived by actions conforming to accepted standards of conduct}, and \ul{adhering to all laws and statutes governing}, in addition to \ul{using this information only when properly authorized by sanctioned officials}.
+Software engineers should be careful to \ul{only use facts and statistics collected for reference that are in agreement with the truth}, \ul{derived by actions conforming to accepted standards of conduct}, and \ul{adhering to all laws and statutes governing}, in addition to \ul{using this information only when properly authorized by sanctioned officials}.
 \end{framed}
 
 \subsubsection{Analysis}
 
-\paragraph{Only use statistics collect that are in agreement with the truth}
+\paragraph{Only use facts and statistics collected that are in agreement with the truth}
 
-After successfully breaching the Nantez enrichment facility, the Stuxnet virus collected data from properly operating centrifuges, therefore its data collection was in agreement with the truth.
+\subparagraph{Data Collection and Presentation}
+
+After successfully breaching the Nantez enrichment facility, the Stuxnet virus collected data from properly operating centrifuges, therefore its data collection was in agreement with the truth. However, after dormantly monitoring encrichmet activity for a period of 13 days, Stuxnet activated its payload and overwrote SCADA monitoring equipment with the previously recorded data. This action violates the SE Code of Ethics as it presented data to operators working on-site at the Nantez enrichment facility false data purposely collected and applied to be in disagreement with the truth.
+
+\subparagraph{Fraudulent Digital Certification}
+
+In order for Stuxnet to deliver its payload to the Nantez enrichment facility, it built a network of potential attack vectors by infecting thousands of computers largely centralized in Iran.
+
+The false signing of the Stuxnet virus required the inclusion of digital signing certificates to circumvent Windows system security measures. These certificates constitute additional operating information needed by the virus, and are paired with the executable upon release.
+
+Stuxnet's Software Engineers acquired stolen digital certificates from two Taiwanese corporations, Realtek and JMicron.\cite{signedUsingCertificates}.Due to the nature of the certificates specifically signed and represented the two victim corporations by name, the Software Engineering teams responsible had first hand knowledge Stuxnet was fradulently signed. Therefore, these teams acted unethically as they presented digital certification information as factual that was not in agreement with the truth in order to bypass Windows security systems. 
 
 \paragraph{Derived by actions conforming to accepted standards of conduct}
 
@@ -301,6 +270,18 @@ The United States legal code defines espionage as,
 \end{displayquote}
 
 This legislation highlights how the Stuxnet virus could be charged as an act of espionage by United States definition as it gathered critical information for the purpose of injury to Iran's nuclear infrastructure, which is innately interconnected with national defense following the nuclear weapons era. Stuxnet was transmitted with the purpose of injury to Iran's nuclear infrastructure. The virus infected thousands of IP addresses owned by private corporation in Iran. The virus (document) was then, unknowingly (indirectly), physically transfered by at least one employee, subject, or citizen involved with the Nantez enrichment facility. The result was a modification of the instrument readouts of the enrichment centrifuges on-site.
+
+\subparagraph{Hamid Firoozi Charged with Unauthorized Access into Bowman Dam SCADA System}
+
+On March 24th, 2016 a grand jury in the Southern District of New York indicted seven Iranian citizens employed by Iran-based companies: ITSecTeam and Mersad Company, acting by the request of the Islamic Revolutionary Guard Corp. They were charged with a campaign of DDoS attacks which, "disabled victim bank websites, prevented customers from accessing their accounts online and collectively cost the victims tens of millions of dollars in remediation costs." In the same indictment, Hamid Firoozi was charged with, "obtaining unauthorized access into the Supervisory Control and Data Acquisition (SCADA) systems of the Bowman Dam, located in Rye, New York."
+
+This United States Department of Justice noted, "unauthorized access allowed him to obtain information regarding the status and operation of the dam [including:] water levels, temperature and status of the sluice gate, which is responsible for controlling water levels and flow rates."
+
+In defense of the indictment, Assistant Attorney General Carlin stated,
+
+\begin{displayquote}
+"Like past nation state-sponsored hackers, these defendants and their backers believed that they could attack our critical infrastructure without consequence, from behind a veil of cyber anonymity ... This indictment once again shows there is no such veil – we can and will expose malicious cyber hackers engaging in unlawful acts that threaten our public safety and national security.”
+\end{displayquote}
 
 \paragraph{Using this information only when properly authorized by sanctioned officials}
 
@@ -346,6 +327,30 @@ Violating the sovereignty for one nation to govern itself results in correlative
 
 Neither the United States, nor Israel have officially publicly announced their involvement in the development of Stuxnet, likely for the purposes of military concealment. Such action restricts the internationally community from reviewing and acting on illegal acts of international espionage and warfare, resulting precedent setting minimal repercussions for the what has been recognized to be the first use of state-sanctioned cyberwarfare. By never publically admitting involvement in the development of Stuxnet, both the United States and Israel acted unethically.
 
+
+%%% PROBABLY GONNA SCRAP
+
+\subsection{Code Tenet 2.02}
+
+\subsubsection{Definition}
+
+Tenet 2.02 states:
+\begin{framed}
+Software Engineers shall, "Not knowingly use \underline{software} that is \underline{obtained illegally}..."\cite{softwareEngineeringCodeOfEthics}
+\end{framed}
+
+\paragraph{Software is}
+Google defines software as, "The programs and other operating information used by a computer."\cite{softwareDefinition} The key-certificate files used to falsely sign Stuxnet, are therefore classified under the superset of software due to their necessity for software to operate.
+
+\paragraph{Obtained illegally}
+To obtain something is to come into the possession of the respective item, regardless of the means. Illegal means, "not according to or authorized by law," therefore, an item that is obtained in a way forbidden by laws or statutes was obtained illegally.\cite{illegalDefinition}
+
+\subsubsection{Domain Specific Tenet}
+
+Therefore, SE Code Tenet 2.02 can be stated:
+\begin{framed}
+The United States and Israel should not \ul{knowingly} \ul{use programs} and \ul{other operating information} that have been \ul{obtained in ways forbidden by law}. 
+\end{framed}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
