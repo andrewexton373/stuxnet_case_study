@@ -53,7 +53,7 @@ Dr. Clark Turner \vspace{10pt} \\
 Throughout the early 2000s, Iran's policy on nuclear development, in addition to international intelligence gathering indicated Iran sought the advancement of its nuclear weapons program, grounding concern and sparking debate in forums such as the United Nations.\cite{unitedNationsResolutions}
 Was it ethical for the United States and Israeal to intervene, controlling Iran's uranium production efficiency by deploying the Stuxnet virus, destroying critical nuclear infrastructure?
 
-This deliberate action restricted Iran's ability to pursue nuclear energy for civilian infrastructure including: water desalination and energy production. However, it also limited Iran's ability to achieve nuclear "break-out": a state where  intelligence agencies are not confident they can determine the status of nuclear weapons production due to rapid uranium enrichment capabilities. The deployment of the Stuxnet virus violated Iran's sovereignty, was not sanctioned by United Nations agreements, and violates multiple tenents of the Software Engineering Code of Ethics, resulting in its unethical nature.
+This deliberate action restricted Iran's ability to pursue nuclear energy for civilian infrastructure including: water desalination and energy production. However, it also limited Iran's ability to achieve nuclear "break-out": a state where  intelligence agencies are not confident they can determine the status of nuclear weapons production due to rapid uranium enrichment capabilities. The deployment of the Stuxnet virus violated Iran's sovereignty, was not sanctioned by United Nations agreements, and violates multiple tenets of the Software Engineering Code of Ethics, resulting in its unethical nature.
 
 %%% MAIN CODE TENET + PLAIN LANGUAGE REASON !!!!!
 
@@ -76,7 +76,7 @@ Throughout the early 2000s, the Islamic Republic of Iran's nuclear program was a
 
 The UN imposed international mandates on the Iran, requiring the disclosure of their nuclear program activity to the International Atomic Energy Association (IAEA), following state policy statements targeting Iran's nuclear weapon program advancements. After reviewing Iran's October 21st, 2003 nuclear program declaration, the IAEA questioned why certain centrifuge designs uncovered during the inspection were not included in the report, which Iranian authorities responded they, "neglected to include due to time considerations".\cite{implementationOfNPTSafeguards} In response to Iran's  continued enrichment actions, which violated the initial UN Resolutions, the United Nations Security Council (UNSC) adopted Resolution 1696, calling for the suspension of all uranium enrichment and reprocessing related activities, until IAEA officials could assess the nature of Iran's enrichment activity.\cite{resolution1696}
 
-While UN resolutions were aimed to set a ceiling for Iran's enrichment capabilities, analysis of IAEA inspection data revealed that Iran could further enrich its Low Enriched Uranium (LEU) stockpiles, and thus was capable of constructing a nuclear weapon by the beginning of 2011.\cite{hasIranAchievedaNuclearWeapon}
+While UN resolutions were aimed to set a ceiling for Iran's enrichment capabilities, analysis of IAEA inspection data revealed that Iran could further enrich its Low Enriched Uranium (LEU)\footnotemark[1] stockpiles, and thus was capable of constructing a nuclear weapon by the beginning of 2011.\cite{hasIranAchievedaNuclearWeapon}
 
 In June 2010, a Belarusian malware-detection firm detected multiple versions of malware on client computers digitally signed by two different certificates, one from Realtek Semiconductor, and the other from JMicron Technology, both of which were revoked the subsequent month.\cite{theRealStoryOfStuxnet} This unprecedented virus's construction employed legitimate keyfile signatures, infecting private organization IP addresses concentrated in Iran.\cite{w32.stuxnetDossier} Security analysts extensively analyzed the virus, to determine its intent, and once identified, Microsoft coined the name Stuxnet to expose its threat to vulnerable Windows computer systems.\cite{microsoftCoinsStuxnet}
 
@@ -84,6 +84,7 @@ On November 3rd, 2010, the head of Iran's Atomic Energy Association reported nuc
 
 Stuxnet's code targeted a unique hardware configuration for a particular supervisory control and data acquisition system (SCADA), which monitored, and injected code into programmable logic controllers (PLCs). Before the viruses target or intent were uncovered, Stuxnet was able to breach Iran's Nantez uranium enrichment facility, modify the frequencies at which enrichment centrifuge motors spun, in addition to manipulating the on-site systems monitoring results with unaltered system records. The result of Stuxnet's deployment was catastrophic physical destruction of Iranian critical nuclear infrastructure.\cite{w32.stuxnetDossier}\cite{lessonsFromStuxnet}
 
+\footnotetext[1]{Low Level Uranium (LUE) enrichment generates the fuel consumed in a civilian nuclear reactor, a process where naturally found uranium is refined to comprise between 7-20\% Uranium-235 as fissile material.\cite{uraniumEnrichmentDetails}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Research Question %%%
@@ -99,7 +100,7 @@ Was it ethical for the United States and Israel to destroy a portion of Iran's c
 
 \subsection{National Security}
 
-In February 2013, President Barack Obama issued PPD-21 requiring all federal contracts to, "take proactive steps to manage risk and strengthen the security and resilience of the Nation’s critical infrastructure," cementing United State's policy to, "It is the policy of the United States to strengthen the security and resilience of its critical infrastructure against both physical and cyber threats."\cite{industrialCyberVulnerabilities} This policy statement, made not too long after the discovery of Stuxnet, highlights the urgency of taking precautions to protect as the virus was a cyber threat that resulted in physical destruction.
+In February 2013, President Barack Obama issued PPD-21 requiring all federal contracts to, "take proactive steps to manage risk and strengthen the security and resilience of the Nation’s critical infrastructure," cementing United State's policy to, "strengthen the security and resilience of its critical infrastructure against both physical and cyber threats."\cite{industrialCyberVulnerabilities} This policy statement, made a couple of years following the discovery of Stuxnet, highlights the urgency of taking precautions to protect as the virus was a cyber threat that resulted in physical destruction.
 
 \subsection{Software System Incompetence}
 
@@ -109,7 +110,6 @@ It's is dependent on system administrators updating to the latest security patch
 
 Today, the worldwide adoption of computer system based infrastructure creates an environment with an increasing number of attack vectors for hackers to discover and use to infiltrate. The number of disclosed security vulnerabilities increased 29.2\% in the first quarter of 2017, revealing an increase in opportunities to attack, therefore the likelihood more viruses are developed to target critical infrastructure for malicious reasons.\cite{industrialCyberVulnerabilities}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Extant Arguments from External Sources %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,11 +117,14 @@ Today, the worldwide adoption of computer system based infrastructure creates an
 
 \subsection{Arguments affirmative}
 
-\subsubsection{Stuxnet targeted Iranian critical nuclear infrastructure, resulting in physic destruction}
+\subsubsection{Stuxnet targeted Iranian critical nuclear infrastructure, resulting in physical destruction}
 
-From evidence gathered, the Stuxnet virus was responsible for the necessary replacement of an estimated 984 of the roughly 9000 total centrifuges at the Nantez nuclear enrichment facility, resulting in the disruption Iran's Low Level Enrichment (LUE)\footnotemark[1] capabilities.\cite{lookIntoIranianNuclearProgram} This action disregarded international sovereignty laws, disrupting Iranian critical nuclear enrichment production, recorded for use in civilian nuclear energy reactors.\cite{internationalSovereigntyDefinition}\footnotemark[2] Its effects also disrupted critical nuclear infrastructure research projects, impeding the development of nuclear desalination plant agreements with Russia, thus restricting the development of a potential source of fresh water for civilians in Iran.\cite{iranRussiaNuclearCooperation}
+From evidence gathered, the Stuxnet virus was responsible for the necessary replacement of an estimated 984 of the roughly 9000 total centrifuges at the Nantez nuclear enrichment facility, resulting in the disruption Iran's Low Level Enrichment capabilities.\cite{lookIntoIranianNuclearProgram} This action disregarded international sovereignty laws, disrupting Iranian critical nuclear enrichment production, recorded for use in civilian nuclear energy reactors.\cite{internationalSovereigntyDefinition}\footnotemark[2] 
 
-\footnotetext[1]{Low Level Uranium (LUE) enrichment generates the fuel consumed in a civilian nuclear reactor, a process where naturally found uranium is refined to comprise between 7-20\% Uranium-235 as fissile material.\cite{uraniumEnrichmentDetails}}
+
+% SEPARATE ARGUMENTS ????
+Its effects also disrupted critical nuclear infrastructure research projects, impeding the development of nuclear desalination plant agreements with Russia, thus restricting the development of a potential source of fresh water for civilians in Iran.\cite{iranRussiaNuclearCooperation}
+
 
 \footnotetext[2]{International sovereignty is well protected by the United Nation's charter and is further defined by the General Assembly in A/RES/50/172 to include: "the strict observance by States of the obligation not to intervene in the affairs of any other State is an essential condition to ensure that nations live together in peace with one another, since the practice of any form of intervention not only \underline{violates the spirit and letter of the Charter}, but also leads to the \underline{creation of situations which threaten international peace and security}\cite{internationalSovereigntyDefinition}}
 
@@ -185,7 +188,7 @@ Viewed from a lens of domain specific applicability, the above definitions yield
 
 \subsubsection{Contributes by Taking Part}
 
-Refined coordination was necessary to develop the Stuxnet program. Stuxnets' actors, covert state-sponsored programs of both the United States and Israel: housed within the National Security Agency and Unit 8200 respectively, held Direct Participation in the design and false certification of the virus's 50 kilobyte code base.\cite{nsaAndUnit8200}\cite{w32.stuxnetDossier}
+Refined coordination was necessary to develop the Stuxnet program. Stuxnets' actors, covert state-sponsored programs of both the United States and Israel: housed within the National Security Agency and Unit 8200 respectively, held Direct Participation in the design and false certification of the virus's 50 kilobyte code base.\cite{NationalSecurityAgencyAndUnit8200}\cite{w32.stuxnetDossier}
 
 \subsubsection{Without Outside Involvement}
 
