@@ -255,9 +255,7 @@ After successfully breaching the Nantez enrichment facility, the Stuxnet virus c
 
 The Windows Development Center begins its documentation on Digital Certificates with a warning. They state that due to the nature of computer-to-computer communication, it exposes an opportunity that could, "allow an \ul{unethical} person to intercept messages or to impersonate another person or entity."\cite{moreOnDigitalCertificates}
 
-In order for Stuxnet to deliver its payload to the Nantez enrichment facility, it built a network of potential attack vectors by infecting thousands of computers largely centralized in Iran.\cite{lessonsFromStuxnet}
-
-In order for the Stuxnet virus to perform its designed operating procedures, the virus required the inclusion of digital signing certificates to circumvent Windows system security measures. These certificates constitute additional operating information needed by the virus, and are paired with the executable upon release.
+In order for Stuxnet to deliver its payload to the Nantez enrichment facility, it built a network of potential attack vectors by infecting thousands of computers largely centralized in Iran.\cite{lessonsFromStuxnet} The virus was successful in executing due to the inclusion of fraudulent digital signing certificates to circumvent Windows system security measures.
 
 Stuxnet's Software Engineers acquired stolen digital certificates from two Taiwanese corporations, Realtek and JMicron.\cite{signedUsingCertificates}. Due to the nature of the certificates representing the two victim corporations by name, the Software Engineering teams responsible had first-hand knowledge Stuxnet was fraudulently signed. Therefore, these teams acted unethically as they presented digital certification information as factual that was not in agreement with the truth in order to bypass Windows security procedures.
 
@@ -279,15 +277,19 @@ The United States legal code defines espionage as,
 
 With the advent of nuclear weapons, nuclear enrichment infrastructure has been intertwined with national defense.
 
-Stuxnet infected thousands of IP addresses owned by private corporation in Iran. The virus code base is a document of operations and procedures. The virus was unknowingly transfered by at least one employee, subject, or citizen working at the Nantez enrichment facility, so it was indirectly transmitted by an unknowing party. The successful infiltration resulted in physical destruction of Iran's enrichment capabilities and thus national injury. Therefore, the United State's legal definition of espionage highlights how the Stuxnet virus could fall under this category, as the virus was indirectly transmitted with the purpose of injury to Iran's nuclear infrastructure.
-
-\paragraph{Using this information only when properly authorized}
-
-Bypassing Nantez facility authorization, on deployment of Stuxnet's payload, previously recorded accurate monitoring metrics were used to overwrite the true SCADA System statistics, to conceal modified operating conditions. The Stuxnet virus bypassed Windows security procedures with fraudulent digital certificates, therefore it executed its code without authorization from the Windows OS or any personnel at Nantez. This is in direct violation of the Software Engineering Code of Ethics. Furthermore, a United States Grand jury has since made precedent ruling on another account of SCADA system monitoring of US Critical Infrastructure that did not result in any physical destruction.
+Stuxnet infected thousands of IP addresses owned by private corporation in Iran. The virus code base is a document of operations and procedures. The virus was unknowingly transfered by at least one employee, subject, or citizen working at the Nantez enrichment facility, so it was indirectly transmitted by an unknowing party. The successful infiltration resulted in physical destruction of Iran's enrichment capabilities and thus national injury. Therefore, the United States' legal definition of espionage highlights how the Stuxnet virus could fall under this category, as the virus was indirectly transmitted with the purpose of injury to Iran's nuclear infrastructure.
 
 \subparagraph{Iranian citizens charged for DDoS attack on US Banks}
 
 On March 24th, 2016 a Grand Jury in the Southern District of New York indicted seven Iranian citizens employed by Iran-based companies. Both ITSecTeam and Mersad Company were acting by the request of the Islamic Revolutionary Guard Corp. The employees found responsible were charged with a campaign of Denial-of-Service (DDoS) attacks which, "disabled victim bank websites, prevented customers from accessing their accounts online and collectively cost the victims tens of millions of dollars in remediation costs."\cite{sevenIraniansIndicted}
+
+\paragraph{Using this information only when properly authorized}
+
+Bypassing Nantez facility authorization, on deployment of Stuxnet's payload, previously recorded accurate monitoring metrics were used to overwrite the true SCADA System statistics, to conceal modified operating conditions.\cite{theRealStoryOfStuxnet} The virus's code, or information, executed unknowingly, and therefore without proper authorization from officials monitoring Nantez facility operations.
+
+In addition, the Stuxnet virus bypassed Windows security procedures with fraudulent digital certificates, therefore it executed its code without authorization from the Windows OS. As the virus utilized the digital certificate, or information fraudulently, it did so without proper authorization from either JMicron or RealTek.\cite{signedUsingCertificates} This is in direct violation of using information only when properly authorized Software Engineering Code of Ethics.
+
+Furthermore, a United States Grand jury has since made precedent ruling on another account of SCADA system monitoring of US Critical Infrastructure that did not result in any physical destruction.
 
 \subparagraph{Hamid Firoozi Charged with Unauthorized Access into Bowman Dam SCADA System}
 
@@ -301,10 +303,11 @@ In defense of the indictment, Assistant Attorney General Carlin stated,
 "Like past nation state-sponsored hackers, these defendants and their backers believed that they could attack our critical infrastructure without consequence, from behind a veil of cyber anonymity ... This indictment once again shows there is no such veil – we can and will expose malicious cyber hackers engaging in unlawful acts that threaten our public safety and national security.”\cite{sevenIraniansIndicted}
 \end{displayquote}
 
+The indictment of Hamid Firoozi for unauthorized monitoring the SCADA System of the Bowman Dam, reveals the legal scrutiny the Stuxnet virus would receive if it were to instead deployed on United States' critical nuclear infrastructure.
+
 \subsubsection{Conclusion}
 
-The Stuxnet virus collected data from properly operating centrifuges at the Nantez nuclear enrichment facility in Iran. The United States and Israel acted unethically in both the collection of data and malicious use of respective data to conceal system problems, resulting in catastrophic malfunction. The data collection techniques employed by Stuxnet could constitute espionage under the United States legal definitions. In addition, the United States' Department of Justice indictment of Hamid Firoozi reveals unauthorized access to the SCADA Systems of critical infrastructure is a chargeable offense. The deployment of Stuxnet by the United States and Israel was therefore unethical.
-
+The deployment of Stuxnet by the United States and Israel was unethical because they violated SE Code Tenet 3.13 with the virus's use of fraudulent digital certificates to infiltrate Nantez facility Windows Systems, and then purposefully overwrote true SCADA monitoring results with false statistics.
 
 \subsection{Code Tenet 1.01}
 
@@ -348,7 +351,9 @@ Neither the United States, nor Israel have officially publicly announced their i
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 
-In conclusion, both the United States and Israel acted unethically when they participated in the development and deployment of the Stuxnet virus. Their actions violated international sovereignty law, restricting Iran's ability to develop its nuclear program independently from international intervention. Iran's strict adherence to the IAEA's inspection regime at the time of Stuxnet's initial deployment further calls to question the legitimacy of the United State's and Israel's ardent stance of deterring Iran from developing nuclear infrastructure all-together. At a low-level, Stuxnet operated by forging critical nuclear infrastructure monitoring equipment data readouts, interfering with the operations of on-site workers, resulting in civilians losing their jobs. It's intended operation was successful in destroying 984 enrichment centrifuges at the Nantez facility, hindering Iran's enrichment potential, however it's immediate effects were only temporary, while it's precedent could be acted endlessly into the future.
+In conclusion, both the United States and Israel acted unethically when they held direct-participation in the development and deployment of the Stuxnet virus. Their actions violated international sovereignty law, restricting Iran's ability to develop its nuclear program independently from international intervention. Iran's strict adherence to the IAEA's inspection regime at the time of Stuxnet's initial deployment further calls to question the legitimacy of the United State's and Israel's ardent stance of deterring Iran from developing nuclear infrastructure all-together. At a low-level, Stuxnet operated by forging critical nuclear infrastructure monitoring equipment data readouts, interfering with the operations of on-site workers, resulting in civilians losing their employment. This action violates the SE Code of Ethics as it potentially violates the United States' own definition of espionage, but more certainly is classified as the unauthorized access and use of information.
+
+Stuxnet's intended operation was successful in destroying 984 enrichment centrifuges at the Nantez facility, hindering Iran's enrichment potential, however it's immediate effects were only temporary, while it's precedent could be acted endlessly into the future.
  
 
 \end{multicols}
