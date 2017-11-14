@@ -181,6 +181,7 @@ Certification is respectively defined, "to attest as being true or as represente
 Software is defined as, "the programs used to direct the operation of a computer".\cite{softwareDefinition} A system is defined as, "An organized or established procedure."\cite{merriamWebsterDefinitions} Therefore, a software system can be defined as the programs used to direct the operation of a computer, comprised of an organized or established procedure. Stuxnet was a program with established procedures used to inject itself into other computer networks, in addition to infiltrating and interfering with the Nantez enrichment facility operations. Therefore, the Stuxnet virus is a software system.\cite{w32.stuxnetDossier}
 
 \subparagraph{Digital Certificates}
+
 Included in many software systems, digital certificates are, "a set of data that completely identifies an entity, and [are] issued by a certification authority only after that authority has verified the entity's identity."\cite{digitalCertificateDefintion} These certificates sign software, marking the identity of the software's origins, which enables operating systems to authorize likely non-malicious executables to run. Therefore, the digital certificates used to sign the Stuxnet virus are encompassed by the definition for a software system.
 
 \paragraph{Software Engineer Definition}
@@ -217,17 +218,17 @@ The Software Engineering Code of Ethics documents an international consensus of 
 
 Tenet 3.13  states:
 \begin{framed}
-Software Engineers shall, "Be careful to use only \ul{accurate data} derived by \ul{ethical} and \ul{lawful} means, and use it only in ways \ul{properly authorized}."\cite{softwareEngineeringCodeOfEthics}
+Software Engineers shall, "Be careful to use only \ul{accurate data} \ul{derived} by \ul{ethical} and \ul{lawful} means, and use it only in ways \ul{properly authorized}."\cite{softwareEngineeringCodeOfEthics}
 \end{framed}
 
 \paragraph{Use accurate data}
 Accurate is defined as, "being in agreement with the truth," while data is defined as, "facts and statistics collected together for reference or analysis."\cite{cambridgeDictionary}
 
 \paragraph{Derived}
-The definition of derived is, "to receive or obtain from a source or origin."\cite{softwareSystemDefinition}
+The definition of derived is, "to receive or obtain from a source or origin."\cite{softwareDefinition}
 
 \subparagraph{Derived ethically}
-Ethical is defined as, "conforming to accepted standards of conduct."\cite{cambridgeDictionary} The Software Engineering Code of Ethics is an internationally accepted standard of conduct all Software Engineers should adopt. Something is derived ethically when it's produced by actions 
+Ethical is defined as, "conforming to accepted standards of conduct."\cite{cambridgeDictionary} With this consideration, something is derived ethically when it's produced by actions that conform to the accepted standards of conduct.
 
 \subparagraph{Derived lawfully}
 Lawful means, "being in harmony with the law," therefore, an action that is performed lawfully, adheres to the all laws and statutes adopted by the accepted governing legislation.\cite{cambridgeDictionary} With this consideration, something is derived lawfully when it is produced by actions that adhere to all laws and statutes respectively governing.
@@ -248,15 +249,17 @@ Software engineers should be careful to \ul{only use facts and statistics collec
 
 \subparagraph{Data Collection and Presentation}
 
-After successfully breaching the Nantez enrichment facility, the Stuxnet virus collected data from properly operating centrifuges, therefore its data collection was in agreement with the truth. However, after secretly monitoring enrichment activity for a period of time, Stuxnet activated its payload and overwrote SCADA monitoring equipment with the previously recorded data.\cite{toKillACentrifuge} This action violates the SE Code of Ethics as it presented on-site operators at the Nantez enrichment facility false data, purposely collected and applied to be in disagreement with the truth.
+After successfully breaching the Nantez enrichment facility, the Stuxnet virus collected data from properly operating centrifuges, therefore its data collection was in agreement with the truth. However, after secretly monitoring enrichment activity for a period of time, Stuxnet activated its payload and overwrote SCADA monitoring equipment with the previously recorded data.\cite{toKillACentrifuge} This action presented on-site operators at the Nantez enrichment facility false data, purposely collected and applied to be in disagreement with the truth, therefore it violates the SE Code of Ethics.
 
 \subparagraph{Fraudulent Digital Certification}
 
-In order for Stuxnet to deliver its payload to the Nantez enrichment facility, it built a network of potential attack vectors by infecting thousands of computers largely centralized in Iran.
+The Windows Development Center begins its documentation on Digital Certificates with a warning. They state that due to the nature of computer-to-computer communication, it exposes an opportunity that could, "allow an \ul{unethical} person to intercept messages or to impersonate another person or entity."\cite{moreOnDigitalCertificates}
 
-The false signing of the Stuxnet virus required the inclusion of digital signing certificates to circumvent Windows system security measures. These certificates constitute additional operating information needed by the virus, and are paired with the executable upon release.
+In order for Stuxnet to deliver its payload to the Nantez enrichment facility, it built a network of potential attack vectors by infecting thousands of computers largely centralized in Iran.\cite{lessonsFromStuxnet}
 
-Stuxnet's Software Engineers acquired stolen digital certificates from two Taiwanese corporations, Realtek and JMicron.\cite{signedUsingCertificates}. Due to the nature of the certificates representing the two victim corporations by name, the Software Engineering teams responsible had first-hand knowledge Stuxnet was fraudulently signed. Therefore, these teams acted unethically as they presented digital certification information as factual that was not in agreement with the truth in order to bypass Windows security systems. 
+In order for the Stuxnet virus to perform its designed operating procedures, the virus required the inclusion of digital signing certificates to circumvent Windows system security measures. These certificates constitute additional operating information needed by the virus, and are paired with the executable upon release.
+
+Stuxnet's Software Engineers acquired stolen digital certificates from two Taiwanese corporations, Realtek and JMicron.\cite{signedUsingCertificates}. Due to the nature of the certificates representing the two victim corporations by name, the Software Engineering teams responsible had first-hand knowledge Stuxnet was fraudulently signed. Therefore, these teams acted unethically as they presented digital certification information as factual that was not in agreement with the truth in order to bypass Windows security procedures.
 
 \paragraph{Derived by actions conforming to accepted standards of conduct}
 
@@ -280,13 +283,17 @@ Stuxnet infected thousands of IP addresses owned by private corporation in Iran.
 
 \paragraph{Using this information only when properly authorized}
 
-Bypassing Nantez facility authorization, on deployment of Stuxnet's payload, previously recorded accurate monitoring metrics were used to overwrite the true SCADA System statistics, to conceal modified operating conditions.
+Bypassing Nantez facility authorization, on deployment of Stuxnet's payload, previously recorded accurate monitoring metrics were used to overwrite the true SCADA System statistics, to conceal modified operating conditions. The Stuxnet virus bypassed Windows security procedures with fraudulent digital certificates, therefore it executed its code without authorization from the Windows OS or any personnel at Nantez. This is in direct violation of the Software Engineering Code of Ethics. Furthermore, a United States Grand jury has since made precedent ruling on another account of SCADA system monitoring of US Critical Infrastructure that did not result in any physical destruction.
+
+\subparagraph{Iranian citizens charged for DDoS attack on US Banks}
+
+On March 24th, 2016 a Grand Jury in the Southern District of New York indicted seven Iranian citizens employed by Iran-based companies. Both ITSecTeam and Mersad Company were acting by the request of the Islamic Revolutionary Guard Corp. The employees found responsible were charged with a campaign of Denial-of-Service (DDoS) attacks which, "disabled victim bank websites, prevented customers from accessing their accounts online and collectively cost the victims tens of millions of dollars in remediation costs."\cite{sevenIraniansIndicted}
 
 \subparagraph{Hamid Firoozi Charged with Unauthorized Access into Bowman Dam SCADA System}
 
-On March 24th, 2016 a grand jury in the Southern District of New York indicted seven Iranian citizens employed by Iran-based companies: ITSecTeam and Mersad Company, acting by the request of the Islamic Revolutionary Guard Corp. They were charged with a campaign of DDoS attacks which, "disabled victim bank websites, prevented customers from accessing their accounts online and collectively cost the victims tens of millions of dollars in remediation costs."\cite{sevenIraniansIndicted} In the same indictment, Hamid Firoozi was charged with, "obtaining unauthorized access into the Supervisory Control and Data Acquisition (SCADA) systems of the Bowman Dam, located in Rye, New York."\cite{sevenIraniansIndicted}
+In the same indictment, Hamid Firoozi was charged with, "obtaining unauthorized access into the Supervisory Control and Data Acquisition (SCADA) systems of the Bowman Dam, located in Rye, New York."\cite{sevenIraniansIndicted}
 
-This United States Department of Justice noted, "unauthorized access allowed him to obtain information regarding the status and operation of the dam [including:] water levels, temperature and status of the sluice gate, which is responsible for controlling water levels and flow rates."\cite{sevenIraniansIndicted}
+The United States Department of Justice noted, "unauthorized access allowed him to obtain information regarding the status and operation of the dam [including:] water levels, temperature and status of the sluice gate, which is responsible for controlling water levels and flow rates."\cite{sevenIraniansIndicted}
 
 In defense of the indictment, Assistant Attorney General Carlin stated,
 
