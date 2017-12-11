@@ -252,6 +252,10 @@ Maintain is defined, “to keep in an existing state.”\cite{merriamWebsterDefi
 
 Integrity is defined, “lack of corruption in electronic data.”\cite{oxfordDictionary} Data was previously defined.
 
+\paragraph{Data}
+
+Data is defined, “facts and statistics collected together for reference or analysis.”\cite{dataDefinition}
+
 \paragraph{Sensitive}
 
 Sensitive means to be, “quick to detect or respond to … signals.”\cite{oxfordDictionary} Signals is defined, “An indication of a situation.”\cite{oxfordDictionary} Therefore being sensitive with respect to signals means being quick to detect or respond to indications of a situation.
@@ -265,7 +269,7 @@ Outdated means, “no longer current.”\cite{merriamWebsterDefinitions}
 Therefore, the SE Code tenet can be stated:
 
 \begin{framed}
-The state-sponsors of Stuxnet must \ul{keep in its existing state the lack of corruption of facts}, being quick to \ul{detect indications of a situation resulting} from \ul{no longer current occurrences.}
+The state-sponsors of Stuxnet must \ul{keep in its existing state the lack of corruption of facts} and statistics \ul{collected together for reference or analysis}, being quick to \ul{detect indications of a situation resulting} from \ul{no longer current occurrences.}
 \end{framed}
 
 \subsubsection{Analysis}
@@ -273,6 +277,17 @@ The state-sponsors of Stuxnet must \ul{keep in its existing state the lack of co
 \paragraph{Keep in its existing state the lack of corruption of facts}
 
 After successfully breaching the Nantez enrichment facility, the Stuxnet virus collected data from properly operating centrifuges. Then, Stuxnet activated its payload and overwrote SCADA monitoring equipment with the previously recorded data.\cite{lessonsFromStuxnet} This false data corrupted the true factual operating statistics of enrichment centrifuge controllers.
+
+\paragraph{Collected Together for Reference or Analysis}
+
+In the case of the Nantez enrichment facility, Supervisory Control and Data Acquisition software interfaces with hardware centrifuges to operate properly.
+
+\subparagraph{Supervisory Control and Data Acquisition (SCADA)}
+
+Schneider Electric states, “SCADA Host platforms … provide functions for graphical displays, alarming, trending and historical storage of data,” all of which is to be consumed as accurate current operating conditions for Nantez facility operators.\cite{schneiderElectric}
+
+With this evidence, we can conclude that the Nantez facility utilized SCADA systems to reference and analyze the current operating conditions of their enrichment centrifuges.
+
 
 \paragraph{Detect Indications of a Situation Resulting}
 
@@ -287,18 +302,17 @@ The Stuxnet virus recorded past operating conditions overwriting current data to
 The Stuxnet virus purposely compromised the integrity of factual operating informations of the SCADA Software Systems at the Nantez nuclear enrichment facility, in addition to concealing its effects. This design violates Tenet 3.14 of the Code of Ethics and is therefore unethical.
 
 
-
 \subsection{Code Tenet 3.13}
 
 \subsubsection{Definition}
 
 Tenet 3.13  states:
 \begin{framed}
-Software Engineers shall, "Be careful to \ul{use only accurate data} \ul{derived} by \ul{ethical} and \ul{lawful} means, and use it only in ways \ul{properly authorized}."\cite{softwareEngineeringCodeOfEthics}
+Software Engineers shall, "Be careful to \ul{use only accurate data} \ul{derived} by \ul{ethical} and \ul{lawful} means, and \ul{use it only in ways properly authorized}."\cite{softwareEngineeringCodeOfEthics}
 \end{framed}
 
 \paragraph{Use only accurate data}
-Accurate is defined as, "being in agreement with the truth," while data is defined as, "facts and statistics collected together for reference or analysis."\cite{cambridgeDictionary} Therefore, using only accurate data means to only use facts and statistics collected together for reference or analysis that are in agreement with the truth.
+Accurate is defined as, "being in agreement with the truth," while data is defined as, "facts and statistics collected together for reference or analysis."\cite{cambridgeDictionary} Therefore, using only accurate data means to only use facts and statistics collected together for reference or analysis that are in agreement with the truth. The Stuxnet virus relied on presenting inaccurate data to execute and conceal its intended operations.
 
 \paragraph{Derived}
 The definition of derived is, "to receive or obtain from a source or origin."\cite{softwareDefinition}
@@ -310,22 +324,39 @@ Ethical is defined as, "conforming to accepted standards of conduct."\cite{cambr
 Lawful means, "being in harmony with the law," therefore, an action that is performed lawfully, adheres to the all laws and statutes adopted by the accepted governing legislation.\cite{cambridgeDictionary} With this consideration, something is derived lawfully when it is produced by actions that adhere to all laws and statutes respectively governing the action.
 
 \paragraph{Only use data when properly authorized}
-An action is properly authorized when it is performed after official approval, where the respective official has been designated to coordinate actions performed by its governing parties. Only using data when properly authorized, in this domain, means only using SCADA monitoring data when properly authorized by Nantez enrichment facility officials. It can also extend to the data that comprises the Stuxnet executable with respect to Windows System authorization.
+
+Authorized software is typically identified by the operating system provider.  The client relies on Microsoft to provide this software authorization.  About Stuxnet, Windows stated in their security bulletin:
+
+\begin{displayquote}
+“By placing Stuxnet on the Severe alert level of their security bulletin and indicating that “it provides the capability for hackers to obtain backdoor accessibility to your PC”.\cite{w32.stuxnetDossier}
+\end{displayquote}
+
+Windows through their monitoring system, indicated that Stuxnet was not authorized software. Since Stuxnet was not authorized, it should not have been propagated by the individuals operating on behalf of the United States and Israel.
+
 
 \subsubsection{Domain Specific Tenet}
 
 Therefore, SE Code Tenet 3.13 can be written:
+
 \begin{framed}
-Participants in the development of Stuxnet should be careful to \ul{only use facts and statistics collected for reference that are in agreement with the truth}, \ul{sourced from actions conforming to accepted standards of conduct}, and \ul{adhering to all laws and statutes governing}, in addition to \ul{using this information only when properly authorized by sanctioned officials or computer system authorization}.
+Participants in the development of Stuxnet should be careful to \ul{only use facts and statistics collected for reference that are in agreement with the truth} in addition to \ul{using this information only when properly authorized by appropriate systems operators} at the Nantez facility.
 \end{framed}
 
 \subsubsection{Analysis}
 
 \paragraph{Only use facts and statistics that are in agreement with the truth}
 
+See previous argument.
+
 \subparagraph{Data Collection and Presentation}
 
 After successfully breaching the Nantez enrichment facility, the Stuxnet virus collected data from properly operating centrifuges, therefore its data collection was in agreement with the truth. However, after secretly monitoring enrichment activity for a period of time, Stuxnet activated its payload and overwrote SCADA monitoring equipment with the previously recorded data.\cite{toKillACentrifuge} This action presented on-site operators at the Nantez enrichment facility false data, purposely collected and applied to be in disagreement with the truth, therefore it is in violation the SE Code of Ethics.
+
+\paragraph{Properly Authorized by Appropriate Systems Operators}
+
+Bypassing Nantez facility authorization, on deployment of Stuxnet's payload, previously recorded accurate monitoring metrics were used to overwrite the true SCADA System statistics, concealing modified operating conditions.\cite{theRealStoryOfStuxnet} The virus's code, or information, executed unknowingly, and therefore without proper authorization from officials monitoring Nantez facility operations.
+
+In addition, the Stuxnet virus bypassed Windows security procedures with fraudulent digital certificates, therefore it executed its code without proper authorization from the Windows OS. Furthermore, as the virus utilized the digital certificate, or information fraudulently, it did so without any authorization from either JMicron or RealTek.\cite{signedUsingCertificates} This is in direct violation of using information only when properly authorized.
 
 \subparagraph{Fraudulent Digital Certification}
 
@@ -335,61 +366,9 @@ In order for Stuxnet to deliver its payload to the Nantez enrichment facility, i
 
 Stuxnet's Software Engineers acquired stolen digital certificates from two Taiwanese corporations, Realtek and JMicron.\cite{signedUsingCertificates}. Due to the nature of the certificates representing the two victim corporations by name, the Software Engineering teams responsible had first-hand knowledge Stuxnet was fraudulently signed. Therefore, these teams acted unethically as they presented digital certification information as factual that was not in agreement with the truth obscuring the malicious code to bypass Windows security procedures. The fraudulent digital certification of Stuxnet is in direct in violation of tenet 3.13.
 
-\paragraph{Derived by actions conforming to accepted standards of conduct}
-
-Stuxnet recorded the normal operating conditions and metrics of the SCADA System at the Nantez enrichment facility covertly, before deploying its payload. These metrics, while technically collected without authorization, never reached public networks, and thus does not constitute the majority of damage.
-
-\paragraph{Adhering to all laws and statutes governing}
-
-The means by which the virus breached the Nantez nuclear enrichment facility to perform data collection can be interpreted as espionage.
-
-\subparagraph{Espionage}
-
-The United States legal code defines espionage as,
-
-\begin{displayquote}
-"Gathering or delivering defense information," for the purpose of, "injury of the [victim nation] or to the advantage of a [another] nation,... \ul{transmits}... to any foreign government, or to any \ul{faction or party}... within a foreign country, whether recognized or unrecognized by the United States, or to any... \ul{employee, subject, or citizen thereof}, \ul{either directly or indirectly}, any \ul{document}, ... note, \ul{instrument}... shall be punished by death or by imprisonment for any term of years or for life."\cite{USEspionageLegalDefinition}
-\end{displayquote}
-
-With the advent of nuclear weapons, nuclear enrichment infrastructure has been intertwined with national defense.
-
-Stuxnet infected thousands of IP addresses owned by private corporation in Iran. The virus code base is a document of operations and procedures. The virus was unknowingly transfered by at least one employee, subject, or citizen working at the Nantez enrichment facility, so it was indirectly transmitted by an unknowing party. The successful infiltration resulted in physical destruction of Iran's enrichment capabilities therefore, national injury. Consequently, the United States' legal definition of espionage highlights how the Stuxnet virus could fall under this category, as the virus was indirectly transmitted with the purpose of injury to Iran's nuclear infrastructure.
-
-\subparagraph{Iranian citizens charged for DDoS attack on US Banks}
-
-On March 24th, 2016 a Grand Jury in the Southern District of New York indicted seven Iranian citizens employed by Iran-based companies. Both ITSecTeam and Mersad Company were acting by the request of the Islamic Revolutionary Guard Corp. The employees found responsible were charged with a campaign of Denial-of-Service (DDoS) attacks which,
-
-\begin{displayquote}
-"disabled victim bank websites, prevented customers from accessing their accounts online and collectively cost the victims tens of millions of dollars in remediation costs."\cite{sevenIraniansIndicted} 
-\end{displayquote}
-
-This indictment reveals how cyber attacks that interfere with critical infrastructure, in this case the US Banking system, results in legal repercussions when performed against the United States.
-
-\paragraph{Using this information only when properly authorized}
-
-Bypassing Nantez facility authorization, on deployment of Stuxnet's payload, previously recorded accurate monitoring metrics were used to overwrite the true SCADA System statistics, concealing modified operating conditions.\cite{theRealStoryOfStuxnet} The virus's code, or information, executed unknowingly, and therefore without proper authorization from officials monitoring Nantez facility operations.
-
-In addition, the Stuxnet virus bypassed Windows security procedures with fraudulent digital certificates, therefore it executed its code without proper authorization from the Windows OS. Furthermore, as the virus utilized the digital certificate, or information fraudulently, it did so without any authorization from either JMicron or RealTek.\cite{signedUsingCertificates} This is in direct violation of using information only when properly authorized.
-
-In parallel with the Stuxnet case, a United States Grand jury has since made precedent ruling on another account of malicious SCADA system monitoring.
-
-\subparagraph{Hamid Firoozi Charged with Unauthorized Access into Bowman Dam SCADA System}
-
-In the indictment, Hamid Firoozi was charged with, "obtaining unauthorized access into the Supervisory Control and Data Acquisition (SCADA) systems of the Bowman Dam, located in Rye, New York."\cite{sevenIraniansIndicted}
-
-The United States Department of Justice noted, "unauthorized access allowed him to obtain information regarding the status and operation of the dam [including:] water levels, temperature and status of the sluice gate, which is responsible for controlling water levels and flow rates."\cite{sevenIraniansIndicted} Hydro-electric energy facilities are components of a counties critical infrastructure.
-
-In defense of the indictment, Assistant Attorney General Carlin stated,
-
-\begin{displayquote}
-"Like past nation state-sponsored hackers, these defendants and \ul{their backers believed that they could attack our critical infrastructure without consequence, from behind a veil of cyber anonymity} ... This indictment once again shows there is no such veil – we can and will expose malicious cyber hackers engaging in unlawful acts that threaten our public safety and national security.”\cite{sevenIraniansIndicted}
-\end{displayquote}
-
-Stuxnet performed similar routines on critical nuclear infrastructure, consequently resulting in physical destruction. The indictment of Hamid Firoozi for unauthorized monitoring the SCADA System of the Bowman Dam, reveals the minimum legal scrutiny the Stuxnet virus would receive if instead it were to be deployed on United States' critical nuclear infrastructure.
-
 \subsubsection{Conclusion}
 
-The deployment of Stuxnet by the United States and Israel was unethical because they violated SE Code Tenet 3.13. The overwriting of true SCADA monitoring results with false statistics was also unethical. Furthermore, the virus's use of fraudulent digital certificates to infiltrate Nantez facility Windows Systems, bypassing proper authorization, contributes to its unethical nature.
+The virus’s use of fraudulent digital certiﬁcates to inﬁltrate Nantez facility Windows Systems, bypasses proper authorization, and is therefore unethical when apply SE Code Tenet 3.13.
 
 \subsection{Code Tenet 1.01}
 
