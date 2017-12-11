@@ -234,6 +234,59 @@ As defined above, Stuxnet was developed by Software Engineers sponsored by the U
 
 As the United States and Israel acted as policymakers directing the actions of Software Engineers in the development of Stuxnet, they are responsible for adhering to the tenets outlined in the SE Code of Ethics. Therefore, we will analyze the ethics of the state-sponsored design of Stuxnet by applying the SE Code Tenets.
 
+\subsection{Code Tenet 3.14}
+
+\subsubsection{Definition}
+
+Tenet 3.14 states:
+
+\begin{framed}
+Software Engineers shall, “\ul{maintain} the \ul{integrity} of \ul{data}, being \ul{sensitive} to \ul{outdated} … occurrences.”\cite{softwareEngineeringCodeOfEthics}
+\end{framed}
+
+\paragraph{Maintain}
+
+Maintain is defined, “to keep in an existing state.”\cite{merriamWebsterDefinitions}
+
+\paragraph{Integrity}
+
+Integrity is defined, “lack of corruption in electronic data.”\cite{oxfordDictionary} Data was previously defined.
+
+\paragraph{Sensitive}
+
+Sensitive means to be, “quick to detect or respond to … signals.”\cite{oxfordDictionary} Signals is defined, “An indication of a situation.”\cite{oxfordDictionary} Therefore being sensitive with respect to signals means being quick to detect or respond to indications of a situation.
+
+\paragraph{Outdated}
+
+Outdated means, “no longer current.”\cite{merriamWebsterDefinitions}
+
+\subsubsection{Domain Specific Tenet}
+
+Therefore, the SE Code tenet can be stated:
+
+\begin{framed}
+The state-sponsors of Stuxnet must \ul{keep in its existing state the lack of corruption of facts}, being quick to \ul{detect indications of a situation resulting} from \ul{no longer current occurrences.}
+\end{framed}
+
+\subsubsection{Analysis}
+
+\paragraph{Keep in its existing state the lack of corruption of facts}
+
+After successfully breaching the Nantez enrichment facility, the Stuxnet virus collected data from properly operating centrifuges. Then, Stuxnet activated its payload and overwrote SCADA monitoring equipment with the previously recorded data.\cite{lessonsFromStuxnet} This false data corrupted the true factual operating statistics of enrichment centrifuge controllers.
+
+\paragraph{Detect Indications of a Situation Resulting}
+
+The Stuxnet virus was designed to mask factual operating data, thus preventing operators from being able to detect indications of situational centrifuge failure. The United States and Israel intentionally made it impossible to monitor how the centrifuges were currently operating. They made no attempt to detect indications that would identify erroneous data. The purpose of the attack was to obscure accurate data.
+
+\paragraph{No Longer Current Occurrences}
+
+The Stuxnet virus recorded past operating conditions overwriting current data to conceal its attack vector.  Its mode of attack was to modify the speeds at which centrifuges spun. Centrifuge operators were not able to view current data which would have allowed them to diagnose their equipments’ critical condition. Instead, the compromised centrifuges exceeded design specifications and catastrophically malfunctioned.
+
+\subsubsection{Conclusion}
+
+The Stuxnet virus purposely compromised the integrity of factual operating informations of the SCADA Software Systems at the Nantez nuclear enrichment facility, in addition to concealing its effects. This design violates Tenet 3.14 of the Code of Ethics and is therefore unethical.
+
+
 
 \subsection{Code Tenet 3.13}
 
