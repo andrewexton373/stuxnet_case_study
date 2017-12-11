@@ -50,10 +50,10 @@ Dr. Clark Turner \vspace{10pt} \\
 
 \vfill  %in combination with \newpage this forces the abstract to the bottom of the page
 \begin{abstract}
-Throughout the early 2000s, Iran's stated policy on nuclear development, in addition to international intelligence gathering indicated Iran sought to advance its nuclear weapons program, prompting concern and sparking debate in forums such as the United Nations.\cite{unitedNationsResolutions}
-Was it ethical for the United States and Israel to intervene, controlling Iran's uranium production efficiency by deploying the Stuxnet virus, destroying critical nuclear infrastructure?
 
-Some argue it limited Iran's ability to persue nuclear weapons development.\cite{theRealStoryOfStuxnet} Others suggest this deliberate action restricted Iran's ability to pursue nuclear energy for civilian infrastructure.\cite{lookIntoIranianNuclearProgram} By applying tenets 3.13 and 1.01 of the Software Engineering Code of Ethics, we determine that this use of a state-sponsored cyber-weapon is unethical because it violates Iran's sovereignty.
+In 2010, a computer virus purportedly developed by the United States and Israel, destroyed Iranian uranium enrichment centrifuges.\cite{theRealStoryOfStuxnet} Was it ethical for these state sponsors to develop and deploy this weaponized virus as a means of limiting Iran’s nuclear capabilities?
+
+Some argue it protected the global community by limiting Iran's ability to pursue nuclear weapon development.\cite{theRealStoryOfStuxnet} Others suggest this action restricted Iran's sovereign right to pursue nuclear technology as permitted by the Nuclear Non-Proliferation Treaty.\cite{lookIntoIranianNuclearProgram} By applying ethical principles from tenets 3.13 and 1.01 of the IEEE/ACM Software Engineering Code of Ethics and Professional Practice, we determine that this use of a state-sponsored cyber-weapon is unethical because it produced inaccurate data, derived unethically without proper authorization.  In addition, the state sponsors have not accepted full responsibility for their actions.
 
 %%% MAIN CODE TENET + PLAIN LANGUAGE REASON !!!!!
 
@@ -89,9 +89,9 @@ On November 3rd, 2010, the head of Iran's Atomic Energy Association reported nuc
 Stuxnet's code targeted a unique hardware configuration for a particular Supervisory Control and Data Acquisition System (SCADA), which monitored, and injected code into programmable logic controllers (PLCs). Before the viruses' target or intent were uncovered, Stuxnet was able to breach Iran's Nantez uranium enrichment facility, modify the frequencies at which enrichment centrifuge motors spun. Moreover, the virus manipulated the on-site systems monitoring results with unaltered system records. The result of Stuxnet's deployment was catastrophic physical destruction of Iranian critical nuclear infrastructure.\cite{w32.stuxnetDossier}\cite{lessonsFromStuxnet}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Research Question %%%
+%%% Focus Question %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Research question}
+\section{Focus question}
 
 Was it ethical for the United States and Israel to destroy a portion of Iran's critical nuclear infrastructure with the deployment of the Stuxnet virus?
 
@@ -100,19 +100,24 @@ Was it ethical for the United States and Israel to destroy a portion of Iran's c
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Social Implications}
 
-\subsection{Barack Obama on National Security}
+\subsection{Iran Retaliates against the United States}
+A Grand Jury in the Southern District of New York indicted seven Iranian citizens employed by Iran based companies acting on behalf of the Islamic Revolutionary Guard. The employees found responsible were charged with a campaign of Denial-of-Service (DDoS) attacks beginning in 2011 which, ”disabled victim bank websites, prevented customers from accessing their accounts online and collectively cost the victims tens of millions of dollars in remediation costs.”\cite{sevenIraniansIndicted} This indictment reveals how cyber attacks that interfere with critical infrastructure, in this case the US Banking system, have followed the unprecedented US attack against Iran.
 
-In February 2013, President Barack Obama issued PPD-21 requiring all federal contracts to, "take proactive steps to manage risk and strengthen the security and resilience of the Nation’s critical infrastructure," cementing United States' policy to, "strengthen the security and resilience of its critical infrastructure against both physical and cyber threats."\cite{industrialCyberVulnerabilities} This presidential policy statement, made a couple of years following Stuxnet's consequential physical destruction, highlights the urgency of taking precautions against cyber threats.
+Furthermore, in the indictment, Hamid Firoozi was charged with, ”obtaining unauthorized access into the Supervisory Control and Data Acquisition (SCADA) systems of the Bowman Dam, located in Rye, New York.”\cite{sevenIraniansIndicted} The United States Department of Justice noted, ”unauthorized access allowed him to obtain information regarding the status and operation of the dam [including:] water levels, temperature and status of the sluice gate, which is responsible for controlling water levels and ﬂow rates.”\cite{sevenIraniansIndicted} Hydro-electric energy facilities are components of a country’s critical infrastructure. In defense of the indictment, Assistant Attorney General Carlin stated,
 
-\subsection{Equifax highlights Software System Incompetence of Many in Management Positions}
+\begin{displayquote}
+”Like past nation state-sponsored hackers, these defendants and their backers believed that they could attack our critical infrastructure without consequence, from behind a veil of cyber anonymity.”
+\end{displayquote}
 
-It is dependent on system administrators updating to the latest security patches and implementing the current best practices of secure software design to combat the future influx of malware.
-
-In April 2017, a major flaw in both iOS and Android was revealed that allowed hackers to remotely infiltrate devices via Wi-Fi. The DevOps best practices adopted by both Google and Apple allowed them to immediately identify, and address the issue rapidly.\cite{equifaxHack} Their successful handling of this found vulnerability, with industry standard practices, starkly contrasts the events following the Equifax leak. Unfortunately, events like these highlight the incompetence of many in management regarding the proper practices for the reliable writing, testing, and deployment of software.\cite{equifaxHack}
+These attacks by the Iranian hackers are strikingly similar to the attack that the U.S and Israel launched against Iran.
 
 \subsection{Constantly Increasing Number of Attack Vectors}
 
-Today, the worldwide adoption of computer system based infrastructure creates an environment with an increasing number of attack vectors for hackers to discover and use to infiltrate. The number of disclosed security vulnerabilities increased 29.2\% in the first quarter of 2017, revealing an increase in opportunities to attack. These statistics, paired with Stuxnet's precedent setting physical impact, indicate a likelihood more viruses are developed to target critical infrastructure for malicious reasons.\cite{industrialCyberVulnerabilities}
+Today, the worldwide adoption of computer system based infrastructure creates an environment with an increasing number of attack vectors for hackers to discover and use to inﬁltrate. The number of disclosed security vulnerabilities increased 29.2\% in the ﬁrst quarter of 2017, revealing an increase in opportunities to attack.\cite{industrialCyberVulnerabilities} These statistics, paired with Stuxnet’s precedent setting physical impact, indicate a likelihood more viruses will be developed targeting critical infrastructure for malicious reasons.[19] We can anticipate a rise in these types of attacks against countries that that are reliant on computer systems to control their critical infrastructure.
+
+\subsection{Barack Obama on National Security}
+
+In February 2013, President Barack Obama issued Presidential Policy Directive 21 requiring all federal contracts to, ”take proactive steps to manage risk and strengthen the security and resilience of the Nation’s critical infrastructure against both physical and cyber threats.”\cite{industrialCyberVulnerabilities} This presidential policy statement, made a couple of years following the Stuxnet attack on Iranian critical infrastructure, highlights the understood urgency of taking precautions against cyber threats leveled against nation-states.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Extant Arguments from External Sources %%%
@@ -127,7 +132,7 @@ It is ethical for a state-sponsored virus to target and disrupt another state's 
 
 The United States and Israel understood that Iran was nearing a state of nuclear "break-out". A state where Iran possesses the capability of enriching enough uranium, before IAEA inspections, or international intelligence believe they could confidently intercept enrichment activity. Experts postulate that as a preventative measure to promote nuclear non-proliferation, the United States and Israel jointly agreed to limit the efficiency of Iran's nuclear enrichment through the deployment of Stuxnet, resulting in the increased likelihood IAEA officials would intercept troubling enrichment activity associated with nuclear weapons development.\cite{theRealStoryOfStuxnet}
 
-\subsubsection{Military intervention would have resulted in environmental damage, in addition to civilian casualties}
+\subsubsection{Military intervention would likely result in civilian casualties in addition to environmental damage}
 
 The United States and Israel drafted plans for military bombings of nuclear enrichment facilities. Reuter's citied policy statements on January 29, 2009, "the United States [reserves] all its options, ranging from diplomacy to military action, to pressure Iran over its nuclear program".\cite{usOptionsForIran} Even the most precise military intervention on nuclear infrastructure, there's a high probability of civilian casualties. In addition, such action would likely result in the release of radioactive particles into the atmosphere, creating an environmental crisis. This compounding consequence could result in additional civilian casualties. The careful design and deployment of the Stuxnet virus circumvented environmental damage and casualties, while protecting the interests of international nuclear non-proliferation.
 
@@ -143,7 +148,7 @@ From evidence gathered, the Stuxnet virus was responsible for the necessary repl
 
 \subsubsection{Stuxnet infected over 50,000 unique organizations' IP addresses}
 
-Using fradulent digital certificates, Stuxnet obscured itself as licensed software from two major companies Realtek Semiconductor and JMicron Technology. With these signatures, experts estimate the virus infected over 50,000 unique organizations' IP addresses.\cite{lessonsFromStuxnet} Records indicate a concentration of infected IP addresses in Iran, calling to question the ethics of victimizing private corporations, in addition to  utilizing them as channels of disrupting their respective nation's own critical infrastructure. Stuxnet infiltrated the computer systems of private individuals and organizations in Iran to construct a source of an attack vector, ultimately successful, subsequently breaching Iran's Nantez nuclear enrichment facility.\cite{w32.stuxnetDossier} 
+Using fraudulent digital certificates, Stuxnet obscured itself as licensed software from two major companies Realtek Semiconductor and JMicron Technology. With these signatures, experts estimate the virus infected over 50,000 unique organizations' IP addresses.\cite{lessonsFromStuxnet} Records indicate a concentration of infected IP addresses in Iran, calling to question the ethics of victimizing private corporations, in addition to  utilizing them as channels of disrupting their respective nation's own critical infrastructure. Stuxnet infiltrated the computer systems of private individuals and organizations in Iran to construct a source of an attack vector, ultimately successful, subsequently breaching Iran's Nantez nuclear enrichment facility.\cite{w32.stuxnetDossier} 
 
 \subsubsection{Stuxnet was not officially sanctioned by UNSC resolutions}
 
@@ -394,7 +399,7 @@ At a low-level, Stuxnet operated by forging critical nuclear infrastructure moni
 
 Furthermore, the public statements following the deployment of Stuxnet by the United States and Israel are found to be unethical when applying SE Code Tenet 1.01 as their silence prevented the totality the moral, legal, and ethical repercussions from being discussed in public forums.
 
-Stuxnet's intended operation was successful in destroying 984 enrichment centrifuges at the Nantez facility, hindering Iran's enrichment potential. While it's immediate effects were only temporary, while it's precedent established could have dramatic, long lasting impact in the future.
+Stuxnet's intended operation was successful in destroying 984 enrichment centrifuges at the Nantez facility, hindering Iran's enrichment potential. While Stuxnet's immediate effects were only temporary,  its precedent established for with regards to state-sponsored cyber-weapons could have dramatic, long lasting impact in the future.
 
 
 \end{multicols}
